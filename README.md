@@ -1,50 +1,71 @@
 # Custom VLM Benchmark
 
-This repository provides a Python module to benchmark Visual Language Models (VLMs) on popular multi-modal datasets using code adapted from VLMEvalKit.
+This repository provides a customizable Python module to benchmark Visual Language Models (VLMs) on popular multimodal datasets.  
+It builds on and extends the excellent [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) by OpenCompass, adapting it for lightweight usage, energy-aware setups, and additional flexibility.
 
-## Prerequisites
+## 🔗 Acknowledgment
+
+This project is based on [VLMEvalKit](https://github.com/open-compass/VLMEvalKit), which provides comprehensive support for benchmarking vision-language models.  
+We thank the original authors for their open-source contribution, and this repository reuses and modifies parts of that framework for our custom experiments.
+
+---
+
+## 📦 Prerequisites
 
 - Python 3.8+
 - CUDA-enabled GPU (recommended for large models)
-- [git](https://git-scm.com/) (for cloning VLMEvalKit)
+- [git](https://git-scm.com/) (to clone VLMEvalKit)
 
-## Installation
+---
 
-1. **Clone the repository and VLMEvalKit:**
+## 🔧 Installation
+
+1. **Clone this repository and VLMEvalKit:**
 
     ```bash
-    git clone https://github.com/open-compass/VLMEvalKit.git
-    # (If not already present in your workspace)
+    git clone https://github.com/Romyull-Islam/VLM-Benchmarking.git
+    git clone https://github.com/open-compass/VLMEvalKit.git  # if not already cloned
     ```
 
 2. **Install dependencies:**
 
-    It is recommended to use a virtual environment (e.g., conda or venv).
+    It's recommended to use a virtual environment (conda or venv):
 
     ```bash
     pip install -r requirements.txt
     ```
 
-    This will install PyTorch, Transformers, pandas, tqdm, Pillow, and other required packages. VLMEvalKit will be installed in editable mode.
+    This will install:
+    - PyTorch
+    - Huggingface Transformers
+    - pandas
+    - tqdm
+    - Pillow  
+    and other dependencies used by VLMEvalKit and this script.
 
-3. **Huggingface token:**
+3. **(Optional) Set up CUDA:**
 
-    Put your huggingface token in `hf_token.txt` file.
+    For best performance:
 
-4. **(Optional) Set up CUDA:**
+    ```bash
+    nvcc -V  # Verify CUDA version
+    ```
 
-    - For best performance, ensure you have CUDA 11.7+ and the appropriate NVIDIA drivers installed.
-    - Check your CUDA version with:
-      ```bash
-      nvcc -V
-      ```
+    Ensure CUDA 11.7+ and appropriate NVIDIA drivers are installed.
 
-## Usage
+4. **Huggingface token:**
 
-Run the benchmark script with your desired model and dataset:
+    Create a file named `hf_token.txt` and paste your token inside it (used for gated models).
+
+---
+
+## 🚀 Usage
+
+Run the main script:
 
 ```bash
 python custom_vlm_benchmark.py
+
 ```
 
 Edit the `main()` function in `custom_vlm_benchmark.py` to select:
