@@ -1,0 +1,14 @@
+torch>=2.1.0
+# transformers==4.48.3
+# transformers==4.49.0
+transformers==4.52.0
+pandas
+tqdm
+Pillow
+pyyaml
+scipy
+requests
+pyvips
+num2words
+# VLMEvalKit must be installed in editable mode or as a local package
+-e ./VLMEvalKit 
