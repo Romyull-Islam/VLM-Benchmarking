@@ -13,7 +13,7 @@ We thank the original authors for their open-source contribution, and this repos
 ## 📦 Prerequisites
 
 - Python 3.8+
-- CUDA-enabled GPU (recommended for large models)
+- CUDA-enabled GPU (recommended for large models)(for Raspberry pi or cpu only device not mandatory)
 - [git](https://git-scm.com/) (to clone VLMEvalKit)
 
 ---
