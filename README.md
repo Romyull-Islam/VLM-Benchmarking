@@ -24,7 +24,6 @@ We thank the original authors for their open-source contribution, and this repos
 
     ```bash
     git clone https://github.com/Romyull-Islam/VLM-Benchmarking.git
-    git clone https://github.com/open-compass/VLMEvalKit.git  # if not already cloned
     ```
 
 2. **Install dependencies:**
