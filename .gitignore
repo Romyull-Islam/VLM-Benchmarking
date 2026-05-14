@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+*.swo
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Runtime artifacts from this repo
+outputs/
+results/
+*.log
+
+# Local secrets / config
+hf_token.txt
+.env
+
+# Stray pip-redirect typo file
+=*
+
+# VLMEvalKit is cloned by the user / setup script; it is a separate
+# project. Patches are kept in patches/ and applied at setup time
+# (see patches/README.md and SETUP_NOTES.md).
+VLMEvalKit/

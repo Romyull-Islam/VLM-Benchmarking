@@ -1,4 +1,5 @@
-torch>=2.1.0
+# torch  # managed externally on Jetson — install JetPack wheel manually, see SETUP_NOTES.md
+# torch>=2.1.0  # original; commented out because pip prefers PyPI stable over JetPack 2.5.0a0+nv24.08 (pre-release)
 # transformers==4.48.3
 # transformers==4.49.0
 transformers==4.52.0
