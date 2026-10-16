@@ -21,7 +21,7 @@ hf_token.txt
 # Stray pip-redirect typo file
 =*
 
-# VLMEvalKit is cloned by the user / setup script; it is a separate
+# VLMEvalKit is a git submodule (see .gitmodules); it is a separate
 # project. Patches are kept in patches/ and applied at setup time
-# (see patches/README.md and SETUP_NOTES.md).
-VLMEvalKit/
+# (see patches/README.md and SETUP_NOTES.md). `ignore = dirty` in
+# .gitmodules keeps the patched submodule from showing as modified.

@@ -13,12 +13,13 @@ A fourth patch (the MME yes/no eval) is applied inline to
 `VLMEvalKit/vlmeval/dataset/utils/yorn.py` to make MME tolerant of subset
 sampling — described in [SETUP_NOTES.md](../SETUP_NOTES.md).
 
-## How to apply (after a fresh `git clone` of VLMEvalKit)
+## How to apply (after checking out the VLMEvalKit submodule)
 
 ```bash
 cd ~/VLM-Benchmarking
-# Clone VLMEvalKit if not already present:
-[ -d VLMEvalKit/vlmeval ] || git clone https://github.com/open-compass/VLMEvalKit.git VLMEvalKit
+# Check out the pinned VLMEvalKit submodule if not already present
+# (not needed if you cloned with --recursive):
+git submodule update --init VLMEvalKit
 # Apply patches:
 python3 patches/patch_torchvision_imports.py    # wraps top-level `import torchvision` in try/except
 python3 patches/patch_imports.py                # consolidated decord + torchvision pass

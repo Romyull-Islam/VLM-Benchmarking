@@ -1,0 +1,4 @@
+[submodule "VLMEvalKit"]
+	path = VLMEvalKit
+	url = https://github.com/open-compass/VLMEvalKit.git
+	ignore = dirty
