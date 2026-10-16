@@ -201,3 +201,13 @@ This project is based on [VLMEvalKit](https://github.com/open-compass/VLMEvalKit
 which provides comprehensive support for benchmarking vision-language models.
 We thank the original authors for their open-source contribution; this
 repository reuses and modifies parts of that framework for our experiments.
+
+## Related projects
+
+Part of my work on efficient LLM systems ([all projects](https://github.com/Romyull-Islam)):
+
+- [μKV (EndurKV)](https://github.com/Romyull-Islam/EndurKV): KV-cache eviction with in-place compaction for LLM inference on a phone
+- [SemSched](https://github.com/Romyull-Islam/SemSched): memory capacity vs. prefetch bandwidth for LLM inference on hybrid CXL devices
+- [AQLoRA](https://github.com/Romyull-Islam/AQLoRA): zero-search precision allocation for fast quantized LoRA fine-tuning
+- [SLMs on the edge](https://github.com/Romyull-Islam/SLM): performance of small language models on Raspberry Pi, Jetson Orin and Mac mini (IEEE IPCCC 2024)
+- [Build, Train, Deploy](https://github.com/Romyull-Islam/llm_booklet): an open five-week LLM course in PyTorch
